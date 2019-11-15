@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  p Name #{team.name}
+  form(method='POST' action='/teams/' + team.id + '/fairplayed')
+    button.btn.btn-primary(type='submit') Sign up

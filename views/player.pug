@@ -4,3 +4,5 @@ block content
   h1= title
   p Firstname #{player.firstname}
   p Lastname #{player.lastname}
+  form(method='POST' action='/players/' + player.id + '/fairplayed')
+    button.btn.btn-primary(type='submit') Sign up
