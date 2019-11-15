@@ -30,6 +30,10 @@
   margin-top: 60px;
 }
 
+.team-logo {
+  width: 300px;
+}
+
 .football-middle-right {
   position: absolute;
   right: 10px;
