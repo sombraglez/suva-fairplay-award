@@ -1,0 +1,44 @@
+.games-container {
+  background-color: #00b8cf;
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0px;
+  position: relative;
+}
+
+.games-question {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+
+.football {
+  opacity: 0.24;
+}
+
+.football-top-left {
+  position: relative;
+  top: 100px;
+  left: 40px;
+}
+
+.row-logo {
+  padding: 50px 10px;
+}
+
+.row-teams {
+  margin-top: 60px;
+}
+
+.football-middle-right {
+  position: absolute;
+  right: 10px;
+  bottom: 500px;
+  height: 450px;
+}
+
+.football-bottom-left {
+  position: absolute;
+  left: 45px;
+  bottom: 100px;
+}
