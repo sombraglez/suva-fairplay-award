@@ -1,18 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var pgp = require('pg-promise')(/* options */);
-const cn = {
-  host: 'db-suva-fairplay.postgres.database.azure.com',
-  port: 5432,
-  database: 'suvafairplay',
-  user: 'adminsuva@db-suva-fairplay.postgres.database.azure.com',
-  password: 'be4PWLvPZ3gdKF5H',
-  ssl: true
-};
+var db = require('./config/database');
 
-var db = pgp(cn);
 
-/* GET users listing. */
+/* GET players listing. */
 router.get('/', function(req, res, next) {
   db.many('SELECT * from player')
       .then(function (data) {
@@ -23,6 +14,7 @@ router.get('/', function(req, res, next) {
       })
 });
 
+/* GET player by id*/
 router.get('/:id', function(req, res, next){
     db.one('SELECT * from player where id=$1', req.params.id)
         .then(function (data) {
@@ -31,6 +23,11 @@ router.get('/:id', function(req, res, next){
         .catch(function (error) {
             console.log('ERROR:', error);
         })
+});
+
+router.post('/:id/fairest',function(req,res){
+    console.log("Fair play for :", req.params.id);
+    res.end("yes");
 });
 
 module.exports = router;
