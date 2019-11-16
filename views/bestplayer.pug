@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .container.games-container
+    .row.row-logo
+      img(src='/images/suva.png' class='logo col-6 offset-3')
+    img(src='/images/football.png' class='football-top-left football')
+    .row
+      p.col-8.offset-2.games-question Which player played most fair today?
+    .row.row-teams
+       form(method='GET' action='/bestplayer/')
+        input(type='text', id='bestplayer', name='bestplayer')
+        button.btn.btn-primary(type='submit') Search
+    img(src='/images/football.png' class='football-middle-right football')
+    img(src='/images/football.png' class='football-bottom-left football')
