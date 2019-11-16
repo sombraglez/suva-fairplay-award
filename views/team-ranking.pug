@@ -12,21 +12,32 @@ block content
   a.link(href="/quiz")
      img.imageoval#quiz(src="images/quiz_icon.png")
   a.link(href="/team-ranking")
-     img.imageoval#team-icon(src="images/team_icon.png")
+     img.imageoval#team-icon(src="images/team_icon_selected.png")
   a.link(href="/player-ranking")
      img.imageoval#award-icon(src="images/award_icon.png")
- section.contenedor
-  div.boton
-   div.content
-    img(src="images/team_total.png")
-    p.fuente +10
-  div.boton
-   div.content
-    img(src="images/award_total.png")
-    p.fuente +5 
-  div.boton
-   div.content
-    img(src="images/quiz_total.png")
-    p.fuente +3
- div.content.advice
-  p.fuente The only disability in life is a bad attitude.
+ section.contenedor-table
+  div.title.my-4
+    p Team Ranking
+  table.table.table-borderless.mt-5
+    thead
+        tr
+            th Rank
+            th Team
+            th Change
+    tbody
+        tr
+            td 1
+            td Young Boys
+            td +3  
+        tr
+            td 2
+            td FC St. Gallen
+            td +2
+        tr
+            td 3
+            td FC Thun
+            td -1
+        tr
+            td 4
+            td FC Basel
+            td -4

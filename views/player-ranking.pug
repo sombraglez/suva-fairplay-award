@@ -1,0 +1,43 @@
+extends layout
+block content
+ section(style="background: #fa9d44;")
+  div.contenedorsection.contenedor
+   h1.suva suva
+  div.contenedorsection.contenedor
+   div.name Michel Aebischer - 
+   div.name YB - 1 League  
+  div.contenedorsection.contenedor 
+   div.contenedorsection.contenedor(style="height:1050px")
+    img.profileimg(src="images/player.png")
+  a.link(href="/quiz")
+     img.imageoval#quiz(src="images/quiz_icon.png")
+  a.link(href="/team-ranking")
+     img.imageoval#team-icon(src="images/team_icon.png")
+  a.link(href="/player-ranking")
+     img.imageoval#award-icon(src="images/Player_Icon_Selected.png")
+ section.contenedor-table
+  div.title.my-4
+    p Player Ranking
+  table.table.table-borderless.mt-5
+    thead
+        tr
+            th Rank
+            th Name
+            th Change
+    tbody
+        tr
+            td 1
+            td Marco Wolfli
+            td +3  
+        tr
+            td 2
+            td Simone Rapp
+            td +2
+        tr
+            td 3
+            td David Degen
+            td -2
+        tr
+            td 4
+            td Michel Aebischer
+            td +0

@@ -28,7 +28,6 @@ a {
 .contenedor{
   display: flex;
   justify-content: center;
-  font-family: TheSansB7;
   font-size: 4rem;
   font-weight: bold;
   font-stretch: normal;
@@ -36,6 +35,22 @@ a {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
+}
+.contenedor-table{
+  color: #fa9d44;
+  font-size: 4rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.border-table{
+  border-bottom: #fa9d44 1px;
+}
+.table-borderless{
+  color: #fa9d44;
+  margin-top: 80px!important;
 }
 .profileimg{
   width: 950px;

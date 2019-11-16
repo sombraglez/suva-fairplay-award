@@ -25,5 +25,13 @@ router.get('/quiz', function(req, res, next) {
   res.render('playerquiz');
 });
 
+router.get('/player-ranking', function(req, res, next) {
+  res.render('player-ranking');
+});
+
+router.get('/team-ranking', function(req, res, next) {
+  res.render('team-ranking');
+});
+
 
 module.exports = router;
