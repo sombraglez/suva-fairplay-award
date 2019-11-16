@@ -26,7 +26,7 @@ router.get('/:id', function(req, res, next) {
 
 router.get('/:gameId/team/:teamId/fairplayed', function(req, res) {
   db.one('INSERT INTO game_team_feedback (team_id, game_id) VALUES($1, $2)', [req.params.teamId, req.params.gameId]);
-  res.render("bestplayer", {gameId : gameId});
+  res.render('bestplayer', {gameId : gameId});
 });
 
 module.exports = router;
