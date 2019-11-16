@@ -1,7 +1,7 @@
 # suva-fairplay-award
 MVP Fairness Award platform for football players
 
-Set your DB credential at:  
+Set your DB credential at:  `routes/config/properties.js` 
 
 To start the application just run on project directory:
 
