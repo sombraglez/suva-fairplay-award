@@ -8,8 +8,8 @@ block content
     .row
       p.col-8.offset-2.games-question Which player played most fair today?
     .row.row-teams
-       form(method='GET' action='/games/'+ gameId + '/bestplayer/')
-        input(type='text', id='bestplayer', name='bestplayer')
-        button.btn.btn-primary(type='submit') Search
+       form(method='GET' action='/games/'+ gameId + '/bestplayer/' class="bestplayer-form")
+        input(type='text', id='bestplayer', name='bestplayer' class='bestplayer-input')
+        button.bton2.btn-bestplayer-save(type='submit') Search
     img(src='/images/football.png' class='football-middle-right football')
     img(src='/images/football.png' class='football-bottom-left football')
