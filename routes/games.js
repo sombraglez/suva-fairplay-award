@@ -29,17 +29,42 @@ router.get('/:gameId/team/:teamId/fairplayed', function(req, res) {
     req.params.teamId,
     req.params.gameId
   ]);
-  res.render('bestplayer', { gameId: req.params.gameId });
-});
-
-router.get('/:gameId/bestplayer', function(req, res) {
+  //TODO: remove fake data
+  let data = [
+    { id: 4, firstName: 'Michel', lastName: 'Aebischer' },
+    { id: 5, firstName: 'Nicolas', lastName: 'Moumi Ngamaleu' },
+    { id: 6, firstName: 'Nicolas', lastName: 'Bürgy' },
+    { id: 7, firstName: 'Vincent', lastName: 'Sierro' },
+    { id: 8, firstName: 'Christian', lastName: 'Fassnacht' },
+    { id: 9, firstName: 'Sandro', lastName: 'Lauper' },
+    { id: 10, firstName: 'Marco', lastName: 'Wölfli' },
+    { id: 11, firstName: 'Fabian', lastName: 'Lustenberger' },
+    { id: 12, firstName: 'Jordan', lastName: 'Lotomba' }
+  ];
   res.render('bestplayer', { gameId: req.params.gameId });
 });
 
 router.get('/:gameId/bestplayer/', function(req, res) {
   //TODO: remove fake data
-  let data = [{ firstName: 'Michel', lastName: 'Aebischer' }];
-  res.render('bestplayer', { bestplayer: req.params.gameId });
+  let data = [
+    { id: 4, firstName: 'Michel', lastName: 'Aebischer' },
+    { id: 5, firstName: 'Nicolas', lastName: 'Moumi Ngamaleu' },
+    { id: 6, firstName: 'Nicolas', lastName: 'Bürgy' },
+    { id: 7, firstName: 'Vincent', lastName: 'Sierro' },
+    { id: 8, firstName: 'Christian', lastName: 'Fassnacht' },
+    { id: 9, firstName: 'Sandro', lastName: 'Lauper' },
+    { id: 10, firstName: 'Marco', lastName: 'Wölfli' },
+    { id: 11, firstName: 'Fabian', lastName: 'Lustenberger' },
+    { id: 12, firstName: 'Jordan', lastName: 'Lotomba' }
+  ];
+  res.render('bestplayerfeedback', {
+    gameId: req.params.gameId,
+    playerId: data[0].id
+  });
+});
+
+router.post('/:gameId/bestplayer/:playerId', function(req, res) {
+  res.render('bestplayersaved');
 });
 
 module.exports = router;

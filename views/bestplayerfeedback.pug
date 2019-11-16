@@ -6,10 +6,9 @@ block content
       img(src='/images/suva.png' class='logo col-6 offset-3')
     img(src='/images/football.png' class='football-top-left football')
     .row
-      p.col-8.offset-2.games-question Which player played most fair today?
+      p.col-8.offset-2.games-question Are you sure?
     .row.row-teams
-       form(method='GET' action='/games/'+ gameId + '/bestplayer/')
-        input(type='text', id='bestplayer', name='bestplayer')
-        button.btn.btn-primary(type='submit') Search
+       form(method='POST' action='/games/'+ gameId + '/bestplayer/' + playerId)
+        button.btn.btn-primary(type='submit') Save
     img(src='/images/football.png' class='football-middle-right football')
     img(src='/images/football.png' class='football-bottom-left football')
