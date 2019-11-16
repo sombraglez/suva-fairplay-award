@@ -28,7 +28,15 @@ router.get('/:gameId/team/:teamId/fairplayed', function (req, res) {
     db.one('INSERT INTO game_team_feedback (team_id, game_id) VALUES($1, $2)', [req.params.teamId, req.params.gameId]);
     //TODO: remove fake data
     let data = [
-      {'firstName' : 'Michel', 'lastName': 'Aebischer'}
+      {'id': 4 , 'firstName' : 'Michel', 'lastName': 'Aebischer'},
+      {'id': 5 , 'firstName' : 'Nicolas', 'lastName': 'Moumi Ngamaleu'},
+      {'id': 6 , 'firstName' : 'Nicolas', 'lastName': 'Bürgy'},
+      {'id': 7 , 'firstName' : 'Vincent', 'lastName': 'Sierro'},
+      {'id': 8 , 'firstName' : 'Christian', 'lastName': 'Fassnacht'},
+      {'id': 9 , 'firstName' : 'Sandro', 'lastName': 'Lauper'},
+      {'id': 10 , 'firstName' : 'Marco', 'lastName': 'Wölfli'},
+      {'id': 11 , 'firstName' : 'Fabian', 'lastName': 'Lustenberger'},
+      {'id': 12 , 'firstName' : 'Jordan', 'lastName': 'Lotomba'}
     ];
     res.render('bestplayer', {players : data});
 });
