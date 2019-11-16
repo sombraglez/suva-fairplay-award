@@ -24,6 +24,17 @@ router.get('/:id', function (req, res, next) {
         })
 });
 
+/* GET all players from team*/
+router.get('/:id/players', function (req, res, next) {
+    db.many('SELECT * from player join player_team on player_team.team_id=$1', req.params.id)
+        .then(function (data) {
+            res.render('players', {"players": data});
+        })
+        .catch(function (error) {
+            console.log('ERROR:', error);
+        })
+});
+
 router.post('/:id/fairplayed', function (req, res, next) {
     const fairplayfeedback = db.one('INSERT INTO game_team_feedback (team_id, game_id) VALUES($1, $2) RETURNING id', [req.params.id, 1]);
     res.end("Fairplay saved", fairplayfeedback);
