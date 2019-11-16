@@ -246,31 +246,30 @@ $(function() {
 })
 //When you click on the bad button
 document.getElementById('badButton').addEventListener('click', function(e){
-    document.getElementById('goodButton').disabled = true 
+    document.getElementById('goodButton').disabled = true;
     document.getElementById('goodButton').classList.add('btnDisabled');
     //Shake animation
     document.getElementById('changes').classList.add('shake');
 })
 //Next question
 document.getElementById('nextQuestion').addEventListener('click', function(e){
-    document.getElementById('badButton').disabled = false 
-    document.getElementById('goodButton').disabled = false
+    document.getElementById('badButton').disabled = false;
+    document.getElementById('goodButton').disabled = false;
     document.getElementById('changes').classList.remove('shake');
     document.getElementById('badButton').classList.remove('btnDisabled');
     document.getElementById('goodButton').classList.remove('btnDisabled');
 })
 //Sounds, this function reproduce the sounds
 function reproduce(e) {
-    let player = new Audio()
-    player.src = e
+    let player = new Audio();
+    player.src = e;
     player.play()
 }
 window.addEventListener('load', function () {
     document.getElementById('badButton').addEventListener('click', function () {
         reproduce('/audio/badSound.mp3')
-    }, false)
+    }, false);
     document.getElementById('goodButton').addEventListener('click', function () {
         reproduce('/audio/goodSound.mp3')
     }, false)
-}, false)
-//confetti.render();
+}, false);
