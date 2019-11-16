@@ -104,6 +104,18 @@ section{
   width: 170px;
   height: 150px;
   margin: 90px;
+  outline: none;
+}
+.btnDisabled{
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(250, 157, 68, .5); 
+  border-radius: 70px;
+  width: 170px;
+  height: 150px;
+  margin: 90px;
+  outline: none;
 }
 .bton2{
   color: white;
