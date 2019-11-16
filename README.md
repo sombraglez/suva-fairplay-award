@@ -10,5 +10,5 @@ To start the application just run on project directory:
 
 and check the player quiz at `localhost:3000`
 
-Access the feedback tool for a match here : `localhost:3000/games/<game-id>
+Access the feedback tool for a match here : `localhost:3000/games/<game-id>`
 
