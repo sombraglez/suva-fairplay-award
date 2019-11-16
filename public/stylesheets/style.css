@@ -1,15 +1,22 @@
+html{
+  box-sizing: border-box;
+}
+*,*:before,*after{
+  box-sizing: inherit;
+}
 body {
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  border: 0;
 }
 
 a {
-  color: #00b7ff;
+  color: #00B7FF;
 }
+
 .name {
-  width: 187.5px;
-  height: 30px;
-  font-family: TheSansB7;
-  font-size: 30.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:  3rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -18,29 +25,99 @@ a {
   text-align: center;
   color: #ffffff;
 }
-.CS {
+.contenedor{
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 20px;
-  width: 269.4px;
-  height: 269.4px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+  font-family: TheSansB7;
+  font-size: 4rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
 }
-.CS2 {
+.profileimg{
+  width: 950px;
+  height: 950px;
+}
+.suva{
+ font-style: normal;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 4rem;
+ color: dimgray;
+}
+.imageoval{
+  width: 250px; 
+  height: 250px;
+}
+#quiz{
+  position: absolute;
+  top:300px;
+  left:2.5%;
+}
+#quiz:hover{
+  cursor: pointer;
+}
+
+#team-icon{
+  position: absolute;
+  top: 850px;
+  left: 0.7%;;
+}
+#award-icon{
+  position: absolute;
+  top: 850px;
+  left: 69.3%;;
+}
+
+section{
+  background: white;
+  text-align: center;
+}
+.boton{
+  padding: 5px;
+  margin: 3px;
+  display: inline-block;
+}
+.content{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 230.3px;
-  height: 230.3px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
 }
-.CS3 {
-  width: 190px;
-  height: 190px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
+
+.fuente{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+.fuente2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: #fa9d44;
+}
+.bton {
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fa9d44; 
+  border-radius: 70px;
+  width: 170px;
+  height: 150px;
+  margin: 90px;
+}
+.bton2{
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fa9d44; 
+  border-radius: 70px;
+  width: 540px;
+  height: 150px;
+  margin: 30px;
+}
+.advice{
+  margin-top: 15rem;
+}
+.link{
+  cursor: pointer;
 }
