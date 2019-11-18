@@ -1,8 +1,8 @@
 module.exports = {
-    host: 'db-suva-fairplay.postgres.database.azure.com',
+    host: 'host',
     port: 5432,
     database: 'suvafairplay',
-    user: 'adminsuva@db-suva-fairplay.postgres.database.azure.com',
-    password: 'be4PWLvPZ3gdKF5H',
+    user: 'user',
+    password: '1234',
     ssl: true
 };
